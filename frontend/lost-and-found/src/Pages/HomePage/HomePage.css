@@ -1,0 +1,22 @@
+.align-report-buttons-and-tab {
+    display: flex;
+    align-items: baseline;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.filter-container {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    outline: 2px solid #35ac65;
+    margin-left: 10px;
+    width: 350px;
+}

@@ -1,0 +1,45 @@
+.header {
+    background-color: #35ac65;
+    color: #fff; /* Text color for headers */
+  }
+  
+  /* Background color for the table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+  }
+  
+  /* Text color for content */
+  .item-name,
+  .description,
+  .location,
+  .time-found {
+    color: #333333;
+  }
+  
+  /* Row background colors for better readability */
+  .even-row {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for table rows */
+  tr:hover .item-name,
+  tr:hover .description,
+  tr:hover .location,
+  tr:hover .time-found {
+    background-color: #35ac65; /* Highlight on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+  /* Secondary color for call-to-action buttons or secondary elements */
+  .secondary-button {
+    background-color: #00796b;
+    color: #fff;
+  }
+  
+  /* Accent color for special actions or notifications */
+  .accent-color {
+    background-color: #ff8f00;
+    color: #fff;
+  }

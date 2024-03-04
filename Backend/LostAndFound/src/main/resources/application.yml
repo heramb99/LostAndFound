@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-3vtey6tugvrs4132.us.auth0.com/
+
+auth0:
+  audience: XXXXXXXXXXXXXXXXXX

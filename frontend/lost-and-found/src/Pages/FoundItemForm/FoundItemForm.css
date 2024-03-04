@@ -1,0 +1,58 @@
+.found-item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .found-item-group {
+    margin: 10px 0;
+  }
+  .found-item-input {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+  .found-item-textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  .found-item-checkbox {
+    margin: 10px 0;
+  }
+
+  .found-item-button {
+    background-color: #35ac65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .found-item-button:hover {
+    background-color: #4CAF50;
+  }
+  /* CSS for fade-in animation */
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+li{
+  list-style-type: none;
+}

@@ -1,0 +1,191 @@
+.chathome{
+    /* background-color: rgb(116, 220, 185); */
+    /* height: 100vh; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chat-container{
+    border: 1px solid #333;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    z-index: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgb(143, 143, 143);
+
+    .side-panel{
+        flex:2;
+        border-right: 1px solid #333;
+        background-color: #454040;
+        color: white;
+        overflow-y: auto;
+
+        .listHeader{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #75e6a3;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        .userChatCard{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 0.5px solid white;
+            gap: 20px;
+            cursor: pointer;
+
+            &:hover{
+                /* background-color: #8a7979; */
+                background-color: #75e6a3;
+                color: #333;
+            }
+
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .messagerInfo{
+                align-items: center;
+                p{
+                  margin-bottom: 0%;  
+                }
+            }
+        }
+    }
+
+    .message-part{
+        flex:6;
+
+        .message-panel{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .userHeader{
+                padding: 10px;
+                gap: 20px;
+                background-color: #454040;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                .userInfo{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    color: white;
+                }
+
+                .returnButton{
+                    background-color: #35ac65;
+                    width: auto;
+                    height: auto;
+                    color: #333;
+                }
+            }
+            .chats{
+                background-color: white;
+                flex: 1;
+                overflow-y: auto;
+
+                .chat-message {
+                    background-color: #DCF8C6; /* Background color for the message bubble */
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin: 10px 0;
+                    max-width: 70%; /* Adjust the maximum width as needed */
+                    clear: both;
+                    color: #333;
+                }
+                
+                .sender-name {
+                    font-weight: bold;
+                    color: #128C7E; /* Color for the sender's name */
+                }
+                
+                .message-text {
+                    margin-top: 5px;
+                }
+                
+                .timestamp {
+                    font-size: 12px;
+                    color: #888888; /* Color for the timestamp */
+                    text-align: right;
+                }
+                
+                /* Style for incoming and outgoing messages */
+                .incoming-message {
+                    float: left;
+                    /* background-color: #5ade93; */
+                    background-color: #75e6a3;
+                    margin-left: 10px;
+                }
+                
+                .outgoing-message {
+                    float: right;
+                    background-color: #E5E5EA;
+                    margin-right: 10px;
+                }
+                
+            }
+
+            .emptyChat{
+                background-color: white;
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .messageInput{
+                background-color: white;
+                height: 50px;
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 1px solid #333;
+
+
+                input{
+                    &:placeholder{
+                        color: lightgray;
+                    }
+                }
+
+                
+                button{
+                    color: #35ac65;
+                    border: none;
+                    padding: 10px;
+                }
+            }
+
+            
+        }
+
+        .emptyMessagePanel{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+
+            p{
+                font-weight: 500;
+                font-size: 40px;
+            }
+        }
+    }
+}
